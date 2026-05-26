@@ -1,0 +1,30 @@
+/* Premium Global Scrollbar and styling enhancements */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar - Emerald Jewel Theme */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f3f2; /* surface-container-low */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #004d40; /* primary-container */
+    border-radius: 5px;
+    border: 2px solid #f4f3f2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00342b; /* primary */
+}
+
+/* Custom styles for selecting text */
+::selection {
+    background-color: #fed488; /* secondary-container */
+    color: #785a1a; /* on-secondary-container */
+}

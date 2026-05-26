@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#bfc9c4",
+                        "on-surface-variant": "#3f4945",
+                        "tertiary-fixed": "#c7e9e8",
+                        "surface-bright": "#faf9f8",
+                        "on-primary-fixed": "#00201a",
+                        "outline": "#707975",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00342b",
+                        "on-primary-fixed-variant": "#065043",
+                        "on-tertiary-fixed": "#002020",
+                        "on-tertiary-container": "#96b7b7",
+                        "primary-fixed-dim": "#94d3c1",
+                        "surface-container": "#eeeeed",
+                        "tertiary-fixed-dim": "#abcdcc",
+                        "surface": "#faf9f8",
+                        "surface-tint": "#29695b",
+                        "surface-dim": "#dadad9",
+                        "on-background": "#1a1c1c",
+                        "surface-container-highest": "#e3e2e1",
+                        "surface-container-low": "#f4f3f2",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#785a1a",
+                        "on-secondary-fixed": "#261900",
+                        "inverse-surface": "#2f3130",
+                        "secondary-container": "#fed488",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#94d3c1",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-variant": "#e3e2e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#7ebdac",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary-fixed-variant": "#2d4c4c",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#2a4949",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "tertiary": "#123232",
+                        "secondary-fixed": "#ffdea5",
+                        "background": "#faf9f8",
+                        "secondary": "#775a19",
+                        "primary-fixed": "#afefdd",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f0f0",
+                        "primary-container": "#004d40"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-text { font-family: 'Noto Serif', serif; }
+        .sans-text { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface sans-text">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-stone-50/85 dark:bg-teal-950/85 backdrop-blur-xl shadow-[0_12px_40px_rgba(26,28,28,0.06)] h-20 px-8 md:px-12 flex justify-between items-center transition-all duration-300">
+<div class="flex items-center gap-2"><a href="index.html"><img alt="IDDC Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhuIHEdFAOLeCBVUG-cRTnJrKoC-d5_93hPVIovIj8EWwsFPTZWIBR9Ev-fbTZkFBlWxuQF8iU2fHgG1LHR9s5FohNQV58nhUZ1Jqf0mtIfPnb58aVx1ylk4uHvLlg1pOmbFtvvZCocPnIe3OY2vA8s4dR5G3SRTt5sCy_avxIu_H9YpPc6P1me8GUIN2FMhNlqSKn5L0uM7Vu2LdDif1k_I5YUiaslVgAQSWuO79PnreIGDNYrvzVm5z21fI6vtj8KkKb_KAcB"/></a></div>
+<nav class="hidden md:flex items-center space-x-8"><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="profil.html">Profil IDDC</a>
+<a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="aktivitas-kuliah.html">Aktifitas Kuliah</a>
+<a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="kegiatan-ekstra.html">Kegiatan Ekstra</a>
+<a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="karya-kolaborasi.html">Kolaborasi</a>
+<a class="text-amber-700 relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-amber-700 after:rounded-full uppercase tracking-wider text-xs font-bold" href="pmb.html">PMB</a>
+<a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="karya-kolaborasi.html">Karya Santri</a>
+<a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="kata-alumni.html">Kata Alumni</a>
+<a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="#">Dukungan</a></nav>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-medium text-sm scale-95 active:scale-90 transition-transform shadow-sm">
+                Daftar Sekarang
+            </button><button aria-label="Menu" class="text-primary hover:bg-primary/5 p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section: PMB Landing -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden bg-primary-container">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="Modern Islamic architecture details with geometric patterns and sunlight filtering through arched windows in a scholarly environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmfJCCAvL179qYTn_V2V8bCFLYy-XW2nH3bk7vXd16_yVKl8LwNXe4iZgMm1z2vb0azslslF94ofnk-yK5kDqLSMItIWQTqyUjamXY7BdkUv0paCGTQwKNRUr2UZe-grmn_RsxD5D_8C0c0JcgzVSV-Zy6glo9B4VmYPNHfaH2phdcqR5OCPiwf1ZF7bsPiUnPmvrrG9Phm8WI1_NVBepvmS70sMzprvZ7TWqtfNULViNjlfVVkUNLLtrZPHnG1SxBs7rQagXWLl8"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="text-on-primary">
+<span class="inline-block text-secondary-fixed font-bold tracking-[0.2em] uppercase text-xs mb-4">Penerimaan Mahasiswa Baru 2024/2025</span>
+<h1 class="text-5xl md:text-7xl serif-text font-bold leading-[1.1] mb-6">Membentuk Kreator, Menjaga <span class="text-secondary">Aqidah</span>.</h1>
+<p class="text-lg opacity-90 max-w-md mb-8 leading-relaxed">Bergabunglah dengan ekosistem belajar yang memadukan kedalaman ilmu desain visual dengan akar dakwah Islamiah yang kokoh.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded-md font-bold hover:bg-on-secondary-container transition-colors shadow-xl" href="#form-daftar">Ambil Langkah Pertama</a>
+<a class="border border-outline-variant/30 text-white px-8 py-4 rounded-md font-bold hover:bg-white/10 transition-colors" href="#">Unduh Brosur (.PDF)</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Registration Steps: The Flow -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 md:px-12">
+<div class="mb-20 text-center md:text-left md:max-w-2xl">
+<h2 class="text-4xl serif-text font-bold text-primary mb-4">Alur Pendaftaran</h2>
+<p class="text-on-surface-variant leading-relaxed">Proses seleksi kami dirancang untuk menemukan talenta yang memiliki visi kreatif dan komitmen spiritual.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-outline-variant/20">
+<!-- Step 1 -->
+<div class="pt-12 pb-16 pr-8 border-r border-outline-variant/10 relative group">
+<div class="text-6xl font-black text-primary/5 absolute top-8 right-8 serif-text">01</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3 serif-text">Pengisian Formulir</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Lengkapi data diri dan portofolio awal Anda melalui portal digital kami yang aman dan mudah diakses.</p>
+<div class="text-xs font-bold text-secondary uppercase tracking-widest">Waktu: 15-20 Menit</div>
+</div>
+<!-- Step 2 -->
+<div class="pt-12 pb-16 px-8 border-r border-outline-variant/10 relative group bg-surface-container-low">
+<div class="text-6xl font-black text-primary/5 absolute top-8 right-8 serif-text">02</div>
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary mb-6">
+<span class="material-symbols-outlined">palette</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3 serif-text">Seleksi &amp; Wawancara</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Uji kompetensi kreatif dan sesi wawancara untuk menyelaraskan visi dakwah dan minat desain Anda.</p>
+<div class="text-xs font-bold text-secondary uppercase tracking-widest">Daring / Luring</div>
+</div>
+<!-- Step 3 -->
+<div class="pt-12 pb-16 pl-8 relative group">
+<div class="text-6xl font-black text-primary/5 absolute top-8 right-8 serif-text">03</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined">celebration</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3 serif-text">Pengumuman Resmi</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Hasil seleksi akan diumumkan melalui email dan dashboard pendaftaran dalam waktu 7 hari kerja.</p>
+<div class="text-xs font-bold text-secondary uppercase tracking-widest">Hasil Akhir</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Scholarship & Info: Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Scholarship Card -->
+<div class="md:col-span-8 bg-primary rounded-xl overflow-hidden flex flex-col md:flex-row shadow-xl">
+<div class="p-12 md:w-1/2 flex flex-col justify-center">
+<h2 class="text-3xl serif-text font-bold text-white mb-4">Beasiswa Kader Dakwah</h2>
+<p class="text-on-primary-container mb-8 leading-relaxed">Kami menawarkan beasiswa penuh bagi calon mahasiswa yang memiliki prestasi tahfizh minimal 10 juz atau prestasi nasional di bidang desain.</p>
+<a class="inline-flex items-center text-secondary font-bold hover:gap-2 transition-all" href="#">
+                                Pelajari Syarat Beasiswa 
+                                <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+<div class="md:w-1/2 h-full">
+<img class="w-full h-full object-cover grayscale mix-blend-overlay" data-alt="Young man reading a book in a quiet, sunlit library with shelves of traditional and modern design books in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUPHdshVEN2WVKa8e-fOm3Vt_1a4meTQIFrjflSl-nu3Rn_DKeYHodExNoYheF8_lQB_fEXuK0ltlJzjNlMY1NbyuzimUlSonwsC4rk4l7brm7NJKREZTbPA_wnoDqJCPtOYpVpeZpDwEYvKF3d-YmrOuFUjmcCnURNTOik6DLVybHhXuhO-BSJX1-tZSyMDsIKM6DTfbJhk4uYOoYF0ZD6GGFk6dwJYbXZ_O_shgim8DsROv904_BB4ckm4vQoT7YVwUdjRu6CAQ"/>
+</div>
+</div>
+<!-- FAQ Highlight -->
+<div class="md:col-span-4 bg-white rounded-xl p-8 flex flex-col justify-between shadow-sm border border-outline-variant/10">
+<div>
+<span class="text-secondary font-bold text-xs uppercase tracking-widest mb-4 block">Bantuan</span>
+<h3 class="text-2xl serif-text font-bold text-primary mb-6">Punya Pertanyaan?</h3>
+<div class="space-y-4">
+<div class="pb-4 border-b border-outline-variant/10">
+<p class="text-sm font-bold text-primary">Kapan batas akhir pendaftaran?</p>
+<p class="text-xs text-on-surface-variant mt-1">Gelombang 1 berakhir pada 30 April 2024.</p>
+</div>
+<div class="pb-4 border-b border-outline-variant/10">
+<p class="text-sm font-bold text-primary">Apakah bisa cicilan biaya kuliah?</p>
+<p class="text-xs text-on-surface-variant mt-1">Ya, tersedia skema cicilan 4x per semester.</p>
+</div>
+</div>
+</div>
+<a class="mt-8 text-center py-3 bg-surface-container text-primary font-bold rounded-md hover:bg-surface-container-high transition-colors" href="#">Semua Tanya-Jawab</a>
+</div>
+<!-- Contact Small -->
+<div class="md:col-span-4 bg-secondary text-on-secondary rounded-xl p-8 flex items-center justify-between">
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-80">Konsultasi</p>
+<h4 class="text-xl font-bold">WhatsApp Hotline</h4>
+</div>
+<div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">call</span>
+</div>
+</div>
+<!-- Accreditation -->
+<div class="md:col-span-8 bg-surface-container-highest rounded-xl p-8 flex items-center justify-around flex-wrap gap-8">
+<div class="text-center">
+<div class="text-2xl font-bold text-primary serif-text">UNGGUL</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Akreditasi Program</div>
+</div>
+<div class="h-8 w-px bg-outline-variant/30 hidden md:block"></div>
+<div class="text-center">
+<div class="text-2xl font-bold text-primary serif-text">20+</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Mitra Industri</div>
+</div>
+<div class="h-8 w-px bg-outline-variant/30 hidden md:block"></div>
+<div class="text-center">
+<div class="text-2xl font-bold text-primary serif-text">100%</div>
+<div class="text-[10px] uppercase font-bold text-on-surface-variant">Lulusan Bekerja</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Form Section: Enrollment -->
+<section class="py-24 bg-surface" id="form-daftar">
+<div class="max-w-3xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl serif-text font-bold text-primary mb-4">Mulai Perjalanan Anda</h2>
+<p class="text-on-surface-variant">Isi data di bawah untuk mendapatkan akun pendaftaran dan akses ke panduan portofolio.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs font-bold text-primary uppercase mb-2 tracking-wide">Nama Lengkap</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-secondary-fixed text-sm" placeholder="Sesuai Ijazah" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-primary uppercase mb-2 tracking-wide">Email Aktif</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-secondary-fixed text-sm" placeholder="nama@email.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold text-primary uppercase mb-2 tracking-wide">Nomor WhatsApp</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-secondary-fixed text-sm" placeholder="0812..." type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-primary uppercase mb-2 tracking-wide">Program Studi Pilihan</label>
+<select class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-secondary-fixed text-sm text-on-surface-variant">
+<option>Desain Komunikasi Visual</option>
+<option>Seni Rupa &amp; Dakwah</option>
+<option>Manajemen Media Kreatif</option>
+</select>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-4 rounded-md font-bold text-lg hover:shadow-lg transition-all shadow-primary-container/20" type="submit">
+                            Kirim Formulir Pendaftaran
+                        </button>
+</div>
+<p class="text-[11px] text-center text-on-surface-variant opacity-70">
+                        Dengan menekan tombol di atas, Anda menyetujui <a class="underline" href="#">Syarat &amp; Ketentuan</a> serta Kebijakan Privasi IDDC.
+                    </p>
+</form>
+</div>
+</section>
+<!-- Divider Ornament -->
+<div class="flex items-center justify-center py-12">
+<div class="h-px w-24 bg-outline-variant/20"></div>
+<div class="mx-6 text-secondary flex items-center">
+<span class="material-symbols-outlined">star_half</span>
+</div>
+<div class="h-px w-24 bg-outline-variant/20"></div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 w-full pt-16 pb-8 border-t-0 font-['Manrope'] text-sm leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 md:px-24 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-['Noto_Serif'] text-xl font-semibold text-teal-800 mb-6">IDDC</div>
+<p class="text-teal-900/60 max-w-sm">Membangun peradaban Islam melalui kekuatan visual dan kreativitas yang bertanggung jawab kepada Sang Khalik.</p>
+</div>
+<div>
+<h5 class="font-bold text-teal-900 mb-6">Navigasi</h5>
+<ul class="space-y-4">
+<li><a class="text-teal-900/60 hover:text-teal-700 underline decoration-amber-500/30 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Hubungi Kami</a></li>
+<li><a class="text-teal-900/60 hover:text-teal-700 underline decoration-amber-500/30 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-teal-900/60 hover:text-teal-700 underline decoration-amber-500/30 underline-offset-4 transition-opacity opacity-80 hover:opacity-100" href="#">Syarat &amp; Ketentuan</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-teal-900 mb-6">Sosial Media</h5>
+<div class="flex space-x-4">
+<a class="w-8 h-8 rounded-full bg-teal-900/10 flex items-center justify-center text-teal-900 hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-teal-900/10 flex items-center justify-center text-teal-900 hover:bg-secondary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center border-t border-teal-900/5 pt-8 px-8">
+<p class="text-teal-900/60 text-xs">© 2024 Islamic Design &amp; Dakwah College. Menumbuhkan Kreativitas, Mengakar pada Dakwah.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#bfc9c4",
+                        "on-surface-variant": "#3f4945",
+                        "tertiary-fixed": "#c7e9e8",
+                        "surface-bright": "#faf9f8",
+                        "on-primary-fixed": "#00201a",
+                        "outline": "#707975",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00342b",
+                        "on-primary-fixed-variant": "#065043",
+                        "on-tertiary-fixed": "#002020",
+                        "on-tertiary-container": "#96b7b7",
+                        "primary-fixed-dim": "#94d3c1",
+                        "surface-container": "#eeeeed",
+                        "tertiary-fixed-dim": "#abcdcc",
+                        "surface": "#faf9f8",
+                        "surface-tint": "#29695b",
+                        "surface-dim": "#dadad9",
+                        "on-background": "#1a1c1c",
+                        "surface-container-highest": "#e3e2e1",
+                        "surface-container-low": "#f4f3f2",
+                        "error": "#ba1a1a",
+                        "on-surface": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#785a1a",
+                        "on-secondary-fixed": "#261900",
+                        "inverse-surface": "#2f3130",
+                        "secondary-container": "#fed488",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#94d3c1",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-variant": "#e3e2e1",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#7ebdac",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary-fixed-variant": "#2d4c4c",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#2a4949",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "tertiary": "#123232",
+                        "secondary-fixed": "#ffdea5",
+                        "background": "#faf9f8",
+                        "secondary": "#775a19",
+                        "primary-fixed": "#afefdd",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f1f0f0",
+                        "primary-container": "#004d40"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .serif-italic { font-family: 'Noto Serif'; font-style: italic; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-stone-50/85 dark:bg-teal-950/85 backdrop-blur-xl shadow-[0_12px_40px_rgba(26,28,28,0.06)] h-20 px-8 md:px-12 flex justify-between items-center transition-all duration-300">
+<div class="flex items-center gap-2"><a href="index.html"><img alt="IDDC Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhuIHEdFAOLeCBVUG-cRTnJrKoC-d5_93hPVIovIj8EWwsFPTZWIBR9Ev-fbTZkFBlWxuQF8iU2fHgG1LHR9s5FohNQV58nhUZ1Jqf0mtIfPnb58aVx1ylk4uHvLlg1pOmbFtvvZCocPnIe3OY2vA8s4dR5G3SRTt5sCy_avxIu_H9YpPc6P1me8GUIN2FMhNlqSKn5L0uM7Vu2LdDif1k_I5YUiaslVgAQSWuO79PnreIGDNYrvzVm5z21fI6vtj8KkKb_KAcB"/></a></div>
+<nav class="hidden md:flex items-center space-x-10"><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="profil.html">Profil IDDC</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="aktivitas-kuliah.html">Aktifitas Kuliah</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="kegiatan-ekstra.html">Kegiatan Ekstra</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="karya-kolaborasi.html">Kolaborasi</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="pmb.html">PMB</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="karya-kolaborasi.html">Karya Santri</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="kata-alumni.html">Kata Alumni</a><a class="text-teal-900/70 dark:text-stone-300/70 font-['Manrope'] font-medium uppercase tracking-wider text-xs hover:text-amber-600 dark:hover:text-amber-400 transition-all duration-300" href="#">Dukungan</a></nav>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-medium text-sm scale-95 active:scale-90 transition-transform shadow-sm">
+                Daftar Sekarang
+            </button><button aria-label="Menu" class="text-primary hover:bg-primary/5 p-2 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Professional Muslim women in elegant hijabs collaborating in a modern design studio with sketches and tablets, embodying the Noor Academic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-0ydcKGidBN6-LE3y7IAfrZsgL0DA_Bpi-7ttH6UZI9Jw1iqWcXJp2EARQYjkVytM_NInGfpreFipl87kzNTuk8ne8kxKyXPjvqyBHCDfxoesASflpZ6G4q3GHR6rVTIHvPJI27Ebq03IJIDD63Bj9b6wtgcTdzk06R3SNbFIKq8Zh_c4oEU-M5PwQrfMCv-ZyDl3H0SlqGuAUluFioCKGyFTHRh5VsXdwbiQAW3fHKxFoewySXXlkfFbfM6rLb3g3HXKDT_i0nc"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 md:px-24 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] uppercase tracking-[0.2em] font-bold rounded mb-6">Membentuk Masa Depan Kreatif</span>
+<h1 class="text-5xl md:text-7xl font-headline text-white leading-[1.1] mb-8">Dimana <span class="serif-italic text-secondary-fixed">Seni</span> Berpadu dengan <span class="serif-italic text-secondary-fixed">Dakwah</span>.</h1>
+<p class="text-lg text-white/80 font-light mb-10 max-w-lg leading-relaxed">Pendidikan desain kelas dunia yang berakar kuat pada nilai-nilai keislaman, mencetak desainer yang inspiratif dan berdaya guna.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-md font-semibold text-base transition-all hover:bg-on-secondary-fixed-variant hover:shadow-lg">Gabung Sekarang</button>
+<button class="backdrop-blur-md bg-white/10 border border-white/20 text-white px-8 py-4 rounded-md font-semibold text-base hover:bg-white/20 transition-all">Pelajari Program</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Description Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 md:px-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A minimalist architectural detail of a mosque with clean lines and soft shadows, representing the blend of tradition and modern design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiP9nUDs5VvHUDAmver2gCfosWwOTpXyKypQ-YmRCSLNpZTrnGPYYeXykdjNASco7mThW7hPTQC-puwd2Vn2es5At7qWMcNuUyvoGecx3Ncwc23C1wuIApiNrq86WwCz6T39-1ASH6Fw_PKJae1iTXAOkphFDHqUFGFYdG8i9hIt_kH3p-M_MwptqaRRBTcO6SZC8EIpq-Kvfzo5SB3saFbdIqSvSNh1StqmGtv9aWP2wKvB9-7k9ov_nUKegTvz8I8gipPhspLQY"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-lg shadow-xl hidden md:block">
+<p class="text-white font-headline text-3xl font-bold">12+</p>
+<p class="text-primary-fixed-dim text-xs uppercase tracking-widest font-bold">Tahun Pengalaman</p>
+</div>
+</div>
+<div class="md:col-span-7 md:pl-12">
+<h2 class="text-4xl font-headline text-primary mb-6">Visi Kami dalam Mencetak Desainer Muslim Masa Depan</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Islamic Design &amp; Dakwah College (IDDC) bukan sekadar institusi pendidikan. Kami adalah wadah bagi para pemimpi kreatif yang ingin menggunakan bakat visual mereka sebagai instrumen dakwah yang elegan dan profesional di era digital.</p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/30 pt-8">
+<div>
+<span class="text-secondary font-bold text-2xl block mb-2">95%</span>
+<p class="text-sm text-on-surface-variant">Lulusan Bekerja di Industri Kreatif Global</p>
+</div>
+<div>
+<span class="text-secondary font-bold text-2xl block mb-2">500+</span>
+<p class="text-sm text-on-surface-variant">Karya Mahasiswa Digunakan Lembaga Dakwah</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values: Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 md:px-24">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-headline text-primary mb-4">Pilar Pendidikan Kami</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Kami mengintegrasikan tiga aspek utama untuk membangun kompetensi mahasiswa yang utuh.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Value 1: Kreatifitas -->
+<div class="group bg-surface-container rounded-2xl p-8 hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed">palette</span>
+</div>
+<h3 class="text-2xl font-headline text-primary group-hover:text-white mb-4">Kreatifitas</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed">Mendorong eksplorasi visual tanpa batas dengan pendekatan desain kontemporer yang relevan.</p>
+</div>
+<div class="absolute -bottom-4 -right-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">architecture</span>
+</div>
+</div>
+<!-- Value 2: Dakwah -->
+<div class="group bg-surface-container rounded-2xl p-8 hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed">mosque</span>
+</div>
+<h3 class="text-2xl font-headline text-primary group-hover:text-white mb-4">Dakwah</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed">Menjadikan setiap goresan karya sebagai media syiar yang menyejukkan dan informatif.</p>
+</div>
+<div class="absolute -bottom-4 -right-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">menu_book</span>
+</div>
+</div>
+<!-- Value 3: Vokasi -->
+<div class="group bg-surface-container rounded-2xl p-8 hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed">work</span>
+</div>
+<h3 class="text-2xl font-headline text-primary group-hover:text-white mb-4">Vokasi</h3>
+<p class="text-on-surface-variant group-hover:text-white/80 leading-relaxed">Kurikulum berbasis proyek industri untuk memastikan kesiapan kerja di dunia nyata.</p>
+</div>
+<div class="absolute -bottom-4 -right-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">badge</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Student Gallery Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8 md:px-24">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-headline text-primary mb-2">Galeri Karya Mahasiswa</h2>
+<p class="text-on-surface-variant">Inspirasi visual dari generasi penerus.</p>
+</div>
+<button class="text-secondary font-bold text-sm uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
+                        Lihat Semua <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="space-y-4">
+<div class="rounded-lg overflow-hidden h-64 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Intricate Arabic calligraphy rendered in a modern 3D digital art style with soft glowing lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYQbPHctzYPLX7jKjTHtmEnQPhJvnKqSaqH_GXGCNh9fUBVHonlZBoc0R6cgXucGYu4y862AzsbO3rhqAbEobHDntLbH5pMC8CvNW561nKmVPbbPWfyJo_mLtDs_lVB2IAa8AEyzDyJLk_OJNzuPqylepmEzOafD3ZLd9dzEqL-YOK0-f45-uDOZ8Y8W9DqjPt8KU_f9ro3URydiwOBaLLbZ5c0lh28TmdkPWxC8oknvr7cHxkZc20OfUNavipro-GKMIRiOlAnEs"/>
+</div>
+<div class="rounded-lg overflow-hidden h-48 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Elegant editorial magazine layout featuring Islamic geometric patterns and refined typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQdkZ-A30KQl_wGQIaKkyU0ggA1GoFQ18JiMrcOuXqjXelVgXrz0ZCwlpmPzK-lTrlEVezsGEueaLvZJXIOz9x5U7CYax2eghmKTJulT3KTnsvCiONw_NA4-bVgMJWGj48GNQ0K_CvGB76aF0T0QvQt1VUumA7KrAIMXxJO3HRqZIUpMNNe4ZgPiBIyg_0J7u1lPgrLwpfoD8rm4VzhmC5fd6vpKDlF5GM8aPO2T5ZSMGE-RLsLE3ddAkHrnk3lKFKxzbMhRI_Jeg"/>
+</div>
+</div>
+<div class="space-y-4 pt-8">
+<div class="rounded-lg overflow-hidden h-48 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="A clean branding identity set for a sustainable ethical product with Islamic-inspired minimalist logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAer1Do1NrUNvfiTYbW6T6laja43jwwf8H3ijn0XmBWnda4jEh_5nj3lbgL5hcmZIoCK58jRwRvVeIaG0by6JYWY3hLpPbzxLPLFtOsUXiyRN6CSdtx3h2UKYtOnltxzUw8ZDIDHL3MgDxCh7eAC1jmZN36W3QHLnatJ-fsZ9Uos5L_3ZMfa_SjQ9XAauwFHPMsk4UPxIma6EJCI9-XP7FpFp7a6Ru7o-qCVkmIQP4ylIdP0GFg4zmfC2PKhc-aF1uUlMfISAwvYY4"/>
+</div>
+<div class="rounded-lg overflow-hidden h-72 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Atmospheric UI design for a spiritual mobile app with deep teal and gold color scheme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeMNwbCDnC-tsk3NRo0RL3ArBds5Ce5pFwiMYELvma0ms5zRnbKqMVn-WLMioF22A4T-qmnRNZb4Zx3fscLNzlnm5Brrw0h8_yGVoDCHadKdQwTk-1uxGvfyNY8SHfFotK3gFYneOvDWp-2R0S9vP97RTuJWbT86tqP7qF9RHcy-L2wgVh3X9COF8LkDIt7vk21YV6-r4EP-ytMeME5JQa10_ub6gU7eqcGRQb2ZTZitpDlsctCW9qfvfBEfroAFQBk890VIAgWcE"/>
+</div>
+</div>
+<div class="space-y-4">
+<div class="rounded-lg overflow-hidden h-72 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Creative photography of Islamic architecture using play of light and shadow on white stone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLcVtF09gpHZjUib_P55VmcOCY9c897xagOf07lWPOOcRY03NYbHq8Wseyh45-ZbgANQvXO8S2tq0thWkZ0uBt5k37K81HDzLlaIK-ln1qVbDLvFZ1N_28EANXv8A3-AAtgNZ8qVayfN_5LszVockLXqSFXksur5KHaCV_Kkz1UgkGPxK0d-_9jd5BJNP__F0AX80KmDL8jomy9jh070PuO0rFPYVA-Mzk18Uz5yz9HLh-rxstVaaS1sMx3ypZmhMgysHlf7KbGNY"/>
+</div>
+<div class="rounded-lg overflow-hidden h-48 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Modern poster design for a community dakwah event using bold typography and contemporary illustrations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjPBZ4NgfZrMbzzdCD20koihdmBatUosivv0GEhp_507Rs3vUf3_MBXn3_ENYWkA6bM22YjJpllG-mjIvj1Edg88RL0Ul2BdyZh0wJ5BOGvTHPXZ-SnpHRz3gSem5vtQjWJIP7FnI5PHXh5ZnpficI0NTLccfmyNImcGct3TWnlssobWRlmXOmtUXPJRGCODNd4DzBP8uMJGIBTtqcIsbdTKeC_dJmyoKnEdDJKFzDLYNt_qSkg92DJR_sgT8xeaxkSQeuCP2zbOk"/>
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="rounded-lg overflow-hidden h-56 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Abstract digital background with fluid shapes in primary emerald and secondary gold hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYeobaIrYfUTg2MC9zuAOvYrtXbw926tqcIqyiGTJ8M0RGFPuhVydlWbc76ngWZP1Sv9qw06bhZSu9f4aOxTVR_suq_Tn8eJQvIXben-51jDscW72nCId7FYjG7QowyCB6v7gf68w6XlGIYvlXdlBgPkwGUnmuARH47DxDks-mS8P5qDN2AWZf_WJZpNG07eEFFBtnfR5_7seu7hGfrgGdqyUwcVSW-MwZsdpewsVupDIjiSRM6u7bB-jkMv5C_90-8Dv3mGb4830"/>
+</div>
+<div class="rounded-lg overflow-hidden h-64 shadow-sm hover:shadow-xl transition-shadow">
+<img class="w-full h-full object-cover" data-alt="Creative corporate identity materials with subtle Islamic motifs integrated into the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqWoH4v8XgQmmqtpAsD-LYScHCHprCe6o5T-sabCUWFltJqe3WmU6qRlrzr55475ZKfoWz71SsdyzplPegywEDPf50zkFYUVNnp5P9EV957B8E7R2t9b7TaWNq32NpjkN3SRxBBp0zkbGbzIan9lf2O37sgPq9G_azzJKqA9bGv9IXHeUb75yIs9OPImRRIAWgn7tHjaS3h3Mzs3yDdTJPsRIK75e2jfYKAUBwcUXpMH8I6vdqDsy4E63Y-4kOd5g_rrgudq61NK8"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 md:px-24">
+<div class="bg-primary rounded-3xl overflow-hidden relative p-12 md:p-20 shadow-2xl">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary-fixed/5 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary-fixed/5 rounded-full -ml-48 -mb-48"></div>
+<div class="relative z-10 max-w-3xl">
+<span class="material-symbols-outlined text-secondary-fixed text-6xl mb-8">format_quote</span>
+<h2 class="text-3xl md:text-4xl font-headline text-white leading-relaxed mb-10">
+                            "Di IDDC saya belajar bahwa desain bukan hanya soal estetika, tapi juga soal amanah. Kampus ini memberikan saya tools dan mindset untuk berdakwah melalui visual yang berkualitas."
+                        </h2>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-secondary-fixed">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young smiling creative professional wearing a modern minimal outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkJJprJiX49W_Kpp-CojGiMMEhumHe1LbCyQo3pv69_SNhS4armeQYo-NX-rOaypSSeUX1W2nkw0_E9NCEMb6mk_7qdDdD-P5lqFkp8TYNmhnJwHbCBC9UyXwX7Db2mX-7bHvLEktCd3EQn5tNRkoAQLbQIvvA40MJD8u7upVCe3W1MzNBxRZ10NobNFlAkd5JPsUlB56FUZ9GtyaXyEDcf6nAbITHysa1Qu-CcblY3xUqwkG6jnRiheWv8U10KNkXJXv8yFpQgDg"/>
+</div>
+<div>
+<p class="text-white font-bold text-lg">Ahmad Sulaiman</p>
+<p class="text-primary-fixed-dim text-sm">Alumni 2021 • Art Director di CreativeUmmah</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Verse Ornament Divider -->
+<div class="flex items-center justify-center py-12 px-8">
+<div class="h-px bg-outline-variant/30 flex-grow max-w-xl"></div>
+<div class="mx-6 text-secondary">
+<span class="material-symbols-outlined text-3xl">universal_currency_alt</span>
+</div>
+<div class="h-px bg-outline-variant/30 flex-grow max-w-xl"></div>
+</div>
+<!-- Final CTA -->
+<section class="py-24 text-center">
+<div class="max-w-2xl mx-auto px-8">
+<h2 class="text-4xl font-headline text-primary mb-6">Siap Mengukir Jejak Digital yang Berkah?</h2>
+<p class="text-on-surface-variant mb-10">Pendaftaran mahasiswa baru tahun akademik 2024/2025 telah dibuka. Mulai perjalanan kreatifmu hari ini.</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-bold text-lg shadow-xl hover:bg-primary-container transition-all">Daftar Sekarang</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-teal-950 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 md:px-24 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<p class="font-['Noto_Serif'] text-xl font-semibold text-teal-800 dark:text-stone-200 mb-6">IDDC</p>
+<p class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm leading-relaxed">
+                    Institusi pendidikan desain yang mengintegrasikan kreativitas vokasional dengan nilai spiritual Islam.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-teal-900 dark:text-stone-50 mb-6 text-sm uppercase tracking-widest">Navigasi</h4>
+<ul class="space-y-4">
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Profil Kampus</a></li>
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Program Studi</a></li>
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Penerimaan</a></li>
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Berita</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-teal-900 dark:text-stone-50 mb-6 text-sm uppercase tracking-widest">Legal &amp; Kontak</h4>
+<ul class="space-y-4">
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Hubungi Kami</a></li>
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-sm hover:text-teal-700 dark:hover:text-stone-100 underline decoration-amber-500/30 underline-offset-4 transition-opacity" href="#">Syarat &amp; Ketentuan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-teal-900 dark:text-stone-50 mb-6 text-sm uppercase tracking-widest">Ikuti Kami</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-teal-900/60 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center text-teal-900/60 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 md:px-24 mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-teal-900/60 dark:text-stone-400 font-['Manrope'] text-xs uppercase tracking-widest">
+                © 2024 Islamic Design &amp; Dakwah College. Menumbuhkan Kreativitas, Mengakar pada Dakwah.
+            </p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body></html>
